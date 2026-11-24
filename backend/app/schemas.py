@@ -7,6 +7,7 @@ from .models import StatusCanario
 class BaseCreate(SQLModel):
     nome: str
     destino: str
+    organizacao_id: int
 
 class BasePublic(BaseCreate): 
     id: int
