@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlmodel import SQLModel
+from sqlmodel import Field, SQLModel
 
 from .models import StatusCanario
 
@@ -8,6 +8,10 @@ class BaseCreate(SQLModel):
     nome: str
     destino: str
     organizacao_id: int
+
+class PlantarCreate(SQLModel):
+    qtd: int 
+
 
 class BasePublic(BaseCreate): 
     id: int
