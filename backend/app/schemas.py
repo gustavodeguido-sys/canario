@@ -23,3 +23,10 @@ class CanarioPublic(SQLModel):
     email: str
     url_isca: str
     status: StatusCanario
+
+class EmailRecebido(SQLModel):
+    remetente: str
+    destinatario: str
+    assunto: str
+    corpo: str
+    
